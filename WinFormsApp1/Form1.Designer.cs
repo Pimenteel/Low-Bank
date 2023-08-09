@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panel1 = new Panel();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Location = new Point(1, 127);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(799, 273);
+            panel1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.Black;
             ClientSize = new Size(800, 400);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Home";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
     }
 }
